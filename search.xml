@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>关闭电脑占用端口</title>
+      <link href="/2022/07/11/guan-bi-dian-nao-zhan-yong-duan-kou/"/>
+      <url>/2022/07/11/guan-bi-dian-nao-zhan-yong-duan-kou/</url>
+      
+        <content type="html"><![CDATA[<h2 id="关闭电脑占用的端口"><a href="#关闭电脑占用的端口" class="headerlink" title="关闭电脑占用的端口"></a>关闭电脑占用的端口</h2><h3 id="这是部署hexo遇到的问题"><a href="#这是部署hexo遇到的问题" class="headerlink" title="这是部署hexo遇到的问题"></a>这是部署hexo遇到的问题</h3><p>在部署hexo时，在自己电脑上hexo s时无法停止，这样就导致4000端口一直被占用，下次无法启动，所以需要强行关闭</p><h3 id="查看端口使用情况"><a href="#查看端口使用情况" class="headerlink" title="查看端口使用情况"></a>查看端口使用情况</h3><p>命令如下，端口看自己情况，这里是4000端口</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">netstat</span> -ano <span class="token operator">|</span> findstr <span class="token number">4000</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="https://cdn.jsdelivr.net/gh/Smxzrz/blog-imgbed/blog-img/202207112216784.png" alt="查看端口使用情况"></p><h3 id="关闭进程"><a href="#关闭进程" class="headerlink" title="关闭进程"></a>关闭进程</h3><p>可以看出进程号为44996，到时候关闭自己的要根据自己查出来的进行替换</p><pre class="line-numbers language-none"><code class="language-none">taskkill -PID 44996 -F<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="https://cdn.jsdelivr.net/gh/Smxzrz/blog-imgbed/blog-img/202207112218818.png" alt="关闭进程"></p><p>可以看出成功关闭了</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 问题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2022/07/11/hello-world/"/>
       <url>/2022/07/11/hello-world/</url>
