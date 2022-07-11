@@ -45,14 +45,14 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -110,22 +110,18 @@ deploy:
     # coding: your_coding_project_url,master
     gitee: https://gitee.com/smx-zrz/neigui.gitee.io.git,master
 
-menu:
-  Index:
-    url: /
-    icon: fas fa-home
-  Tags:
-    url: /tags
-    icon: fas fa-tags
-  Categories:
-    url: /categories
-    icon: fas fa-bookmark
-  Archives:
-    url: /archives
-    icon: fas fa-archive
-  About:
-    url: /about
-    icon: fas fa-user-circle
-  Friends:
-    url: /friends
-    icon: fas fa-address-book
+search:
+  path: search.xml
+  field: post
+
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
+
+githubEmojis:
+  enable: true
+  className: github-emoji
+  inject: true
+  styles:
+  customEmojis:
+
